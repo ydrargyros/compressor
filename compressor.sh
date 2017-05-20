@@ -1,6 +1,14 @@
-#Nicer Compressor Script v1.1
-#By Nick Loudaros
-#Older version of this gziped each tar file of cPanel individually
+#title          :compressor.sh
+#description	:Compress all folders of specified folder. Has a nice progress bar, and deletes original folder. USE AT OWN RISK!
+#				
+#author			:Nick Loudaros
+#date			:20111101
+#version        :0.1    
+#usage		 	:bash compressor.sh
+#notes          :Makes usage of pv command.
+#==============================================================================
+#		Changelog:
+#		Older version of this gziped each tar file of cPanel individually
 #       e.g.
 #       for i in $(find /home -type f -name "*.tar")
 #       do
