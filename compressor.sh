@@ -17,7 +17,7 @@
 
 
 #VARIABLES
-DIFF=0                          #Time difference in seconds
+DIFF=0                  #Time difference in seconds
 START=$(date +%s)       #Script starts at this time
 FILES_LEFT=$(find /home/hephaestus -type d |wc -l)      #This is how many files/folders are left
 clear
