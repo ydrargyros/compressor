@@ -22,7 +22,7 @@ START=$(date +%s)       #Script starts at this time
 FILES_LEFT=$(find /home/hephaestus -type d |wc -l)      #This is how many files/folders are left
 clear
 echo -e "\n"
-echo "Nicer compressor Script v1.1"
+echo "Nicer compressor Script v0.1"
 echo -e "\n"
 echo -e "The following \e[93m$FILES_LEFT\e[0m directories will be compressed"
 echo "$(find . -mindepth 1 -type d|sort -n)"
@@ -31,7 +31,7 @@ read -p "Press [Enter] key to start compression..."
 clear
 
 
-#START
+#START DOING THINGS
 for i in $(find /home/hephaestus -mindepth 1 -type d|sort -n)
 do
 echo -e "There are \e[93m$(find /home/hephaestus -type d|wc -l)\e[0m directories left to compress..." #yellow
@@ -47,4 +47,4 @@ DIFF_M=$(((DIFF/60)%60))
 echo "Compressor script took $DIFF_M minutes and $DIFF_S seconds"       #Final echo to the user
 
 
-#END
+#END OF SCRIPT
