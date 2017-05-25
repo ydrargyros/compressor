@@ -2,7 +2,7 @@
 #description	:Compress all folders of specified folder. Has a nice progress bar, and deletes original folder. USE AT OWN RISK!
 #				
 #author			:Nick Loudaros
-#date			:20111101
+#date			:20170525
 #version        :0.1    
 #usage		 	:bash compressor.sh
 #notes          :Makes usage of pv command.
@@ -19,7 +19,7 @@
 #VARIABLES
 DIFF=0                  #Time difference in seconds
 START=$(date +%s)       #Script starts at this time
-FILES_LEFT=$(find /home/hephaestus -type d |wc -l)      #This is how many files/folders are left
+FILES_LEFT=$(find /home -mindepth 1 -type d |wc -l)      #This is how many files/folders are left
 clear
 echo -e "\n"
 echo "Nicer compressor Script v0.1"
